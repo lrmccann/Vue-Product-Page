@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container-fixed">
+            <div class="header">
+                <div>
+                    <p v-if="premiumAccount"><i class="fas fa-crown"></i></p>
+                    <p v-else="!premiumAccount"><i class="fas fa-poo"></i></i></p>
+                </div>
+                <span>
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>{{cart.length}}</h3>
+                </span>
+            </div>
+            <div class="mainCont container-fixed">
+                <product @add-to-cart="updateCart" @remove-from-cart="removeCart"></product>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,455 @@
+html {
+    width: 100%;
+    height: 100%;
+    /* display: table; */
+    overflow: auto;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    contain: content;
+    overflow: auto;
+    /* display: table-cell; */
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#app{
+    height: auto;
+    width: 100%;
+}
+
+.header{
+    height: 7%;
+    width: 100%;
+    /* background-color: red; */
+    background-color: whitesmoke;
+    border-bottom: solid black thin;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header > div{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    justify-content: center;
+    align-items: center;
+}
+
+.header > div > p > i{
+    padding-top: 35%;
+    font-size: 28px;
+    color: rgb(207, 176, 2);
+}
+
+.header > span {
+    margin-right: .5%;
+    height: 100%;
+    width: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header > span > i{
+    font-size: 22px;
+}
+
+.header > span > h3{
+    font-size: 13px;
+    margin-left: 6%;
+    margin-bottom: 32%;
+}
+
+.mainCont{
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: auto;
+    width: 100%;
+    contain: content;
+    overflow: auto;
+    position: relative;
+    background-color: whitesmoke;
+
+}
+
+.productDiv{ 
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /* background-color: khaki; */
+    border: solid black thin;
+    background-color: whitesmoke;
+    height: 55%;
+    width: 100%;
+    display: flex;
+    box-shadow: 2px 1px 42px 11px #BABABA inset;                 
+    -moz-box-shadow: 2px 1px 20px 11px #BABABA inset;            
+    -webkit-box-shadow: 2px 1px 20px 11px #BABABA inset;
+}
+
+.productImage{
+    border-bottom: solid black thin;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productImage > img{
+    border: solid black thin;
+    height: 80%;
+    width: 80%;
+}
+
+.productInfo{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border-left: solid black thin;
+    border-right: solid black thin;
+    border-bottom: solid black thin;
+}
+
+.productInfo > h1 {
+    height: 14%;
+    width: 100%;
+    text-decoration: underline;
+    /* background-color: orchid; */
+}
+
+.randomShit{
+    height: 40%;
+    width: 100%;
+    /* background-color: powderblue; */
+    display: flex;
+}
+
+.productInfo > h5{
+    /* background-color: orange; */
+    margin-top: 4%;
+    width: 100%;
+    height: 40%;
+}
+
+.prodGeneralDetails{
+    padding-top: 2%;
+    float: left;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prodGeneralDetails > li{
+    margin-top: .75%;
+    font-size: 16px;
+}
+
+.prodSizeDetails{
+    padding-top: 2%;
+    float: left;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prodSizeDetails > li{
+    margin-top: .75%;
+    font-size: 16px;
+}
+
+.colorCont{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    /* background-color: dodgerblue; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-info{
+    cursor: pointer;
+    width: 25%;
+    height: 35%;
+}
+
+.cartCont{
+    height: 100%;
+    width: 30%;
+    /* background-color: firebrick; */
+    border-bottom: solid black thin;
+}
+
+.salesPrice{
+    float: left;
+    height: 30%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: darksalmon; */
+    align-items: center;
+    font-size: 18px;
+    border-bottom: solid black thin;
+    border-right: solid black thin;
+}
+
+.salesPrice > h6{
+    text-decoration: underline;
+}
+
+.salesPrice > p{
+    margin-top: 2%;
+    margin-bottom: 14%;
+}
+
+.salesPrice > div{
+    height: auto;
+    width: 80%;
+    border: solid black thin;
+}
+
+.saleItems{
+    height: 30%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid black thin;
+    /* background-color: fuchsia; */
+}
+
+.stockAndQuantity{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stockAndQuantity > p{
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.trendingAndShipping{
+    height: 100%;
+    width: 15%;
+    /* background-color: dodgerblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trendingAndShipping > p{
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.deliveryInfo{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid black thin;
+}
+
+.deliveryInfo > h5{
+    justify-self: center;
+    align-self: center;
+    text-decoration: underline;
+}
+
+.deliveryInfo > p{
+    margin-left: 1.5%;
+}
+
+.btnCont{
+    margin-top: 5%;
+    height: 15%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartButton{
+    border: transparent;
+    cursor: pointer;
+    height: 50%;
+    width: 65%;
+    background-color: rgb(110, 110, 216);
+    font-size: 18px;
+}
+
+.disabledButton {
+    border: transparent;
+    cursor: pointer;
+    height: 50%;
+    width: 65%;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.removeCartBtn {
+    height: 50%;
+    width: 10%;
+    /* background-color: gold; */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* This is in charge of setting the actual height and width of the review and related container */
+.tabBar{
+    height: 70%;
+    width: 60%;
+    background-color: whitesmoke;
+    border: solid black thin;
+    padding: .5%;
+}
+
+/* Responsible for the tab and write review options, does not contain related items */
+.tabsMainCont{
+    height: 100%;
+    width: 95%;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.reviewAndRelatedCont{
+    /* background-color: gold; */
+    height: 100%;
+    width: 95%;
+}
+
+.tab{
+    display: inline;
+    margin-left: 2%;
+    height: 10%;
+    width: 100%;
+    /* background-color: goldenrod; */
+    cursor: pointer;
+    /* border-bottom: solid black 5px; */
+}
+
+.activeTab{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+
+.emptyReviewText{
+    height: 90%;
+    width: 100%;
+}
+
+.emptyReviewText > h2{
+    margin-left: 1%;
+    margin-top: 1%;
+    text-decoration: underline;
+}
+
+.emptyReviewText > ul > h4{
+    margin-top: 2%;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+/* This marks the section for style pertaining to the second tab, write review */
+.createReviewDiv{
+    height: 94.5%;
+    width: 100%;
+    /* background-color: hotpink; */
+}
+
+.reviewForm{
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewForm > input{
+    height: 10%;
+    width: 90%;
+}
+
+.reviewForm > textArea{
+    height: 25%;
+    width: 90%;
+}
+
+.reviewForm > p{
+    height: 5%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.submitReviewBtn{
+    margin-top: 5%;
+    height: 10%;
+    width: 15%;
+}
+
+/* This is in charge of the related items section */
+.doSomething{
+    float: left;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-left: solid black thin;
+    /* background-color: darksalmon; */
+}
+
+.doSomething > span{
+    height: 100%;
+    width: 100%;
+    /* background-color: yellow; */
+    overflow: scroll;
+    padding: 1%;
+}
+
+.doSomething > span > div{
+    height: 28%;
+    margin-left: .33%;
+    margin-top: .48%;
+    width: 33%;
+    float: left;
+    background-color: greenyellow;
+}
+
+.doSomething > h4{
+    align-self: center;
+    text-decoration: underline;
+}
+
+.footer{
+    margin-top: 1.5%;
+    position: relative;
+    height: 4%;
+    width: 100%;
+    background-color: blue;
+}
